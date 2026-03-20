@@ -22,9 +22,9 @@ const CountryComparison = () => {
             </tr>
             <tr>
               <td className="border border-gray-300 p-2 font-bold">Min. Income</td>
-              <td className="border border-gray-300 p-2 text-center">$3,738/mo</td>
+              <td className="border border-gray-300 p-2 text-center">~$4,400 USD/mo</td>
               <td className="border border-gray-300 p-2 text-center">Varies</td>
-              <td className="border border-gray-300 p-2 text-center">~$1,500/mo</td>
+              <td className="border border-gray-300 p-2 text-center">~$1,500 USD/mo</td>
             </tr>
             <tr className="bg-gray-50">
               <td className="border border-gray-300 p-2 font-bold">Apply From</td>

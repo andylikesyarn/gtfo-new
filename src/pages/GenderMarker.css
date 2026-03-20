@@ -135,3 +135,46 @@ a:hover {
 .hidden {
   display: none;
 }
+
+.update-box {
+  background-color: rgba(255, 220, 220, 0.9);
+  border: 1px solid rgba(200, 60, 60, 0.4);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.update-box p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.update-box strong {
+  color: #b00020;
+}
+
+.update-source {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
+
+.tip-box {
+  background-color: rgba(220, 240, 255, 0.9);
+  border: 1px solid rgba(60, 130, 200, 0.4);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.tip-box p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.tip-box strong {
+  color: #1a4f7a;
+}

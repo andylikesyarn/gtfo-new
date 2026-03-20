@@ -13,8 +13,8 @@ const MexicoApplication = () => {
 
   return (
     <div className="space-y-4">
-      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-3">
-        <p className="text-sm text-yellow-900">
+      <div className="bg-gray-50 border-l-4 border-gray-500 p-3">
+        <p className="text-sm text-gray-800">
           <strong>Critical:</strong> Must apply from OUTSIDE Mexico at a consulate/embassy
         </p>
       </div>
@@ -22,7 +22,7 @@ const MexicoApplication = () => {
       <div className="space-y-2">
         {steps.map(item => (
           <div key={item.step} className="flex items-start bg-white border border-gray-200 rounded p-3">
-            <div className="bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">
+            <div className="bg-gray-700 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm mr-3 flex-shrink-0">
               {item.step}
             </div>
             <div className="flex-1">
@@ -33,13 +33,13 @@ const MexicoApplication = () => {
         ))}
       </div>
 
-      <div className="bg-blue-50 p-3 rounded">
+      <div className="bg-gray-50 border border-gray-200 p-3 rounded">
         <div className="font-bold text-sm mb-2">Popular Cities for Trans Expats:</div>
-        <div className="grid grid-cols-2 gap-2 text-xs">
-          <div>• <strong>Mexico City</strong> - Large LGBTQ+ community</div>
-          <div>• <strong>Playa del Carmen</strong> - Beach lifestyle</div>
-          <div>• <strong>Oaxaca</strong> - Cultural richness</div>
-          <div>• <strong>Puerto Vallarta</strong> - LGBTQ+ beach town</div>
+        <div className="grid grid-cols-2 gap-2 text-xs text-gray-700">
+          <div><strong>Mexico City</strong> — Large LGBTQ+ community</div>
+          <div><strong>Playa del Carmen</strong> — Beach lifestyle</div>
+          <div><strong>Oaxaca</strong> — Cultural richness</div>
+          <div><strong>Puerto Vallarta</strong> — LGBTQ+ beach town</div>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 function Home() {
   const [isPassportSectionOpen, setIsPassportSectionOpen] = useState(false);
   const [isVisaSectionOpen, setIsVisaSectionOpen] = useState(false);
+  const [isRightsSectionOpen, setIsRightsSectionOpen] = useState(false);
 
   const togglePassportSection = () => {
     setIsPassportSectionOpen(!isPassportSectionOpen);
@@ -14,6 +15,10 @@ function Home() {
 
   const toggleVisaSection = () => {
     setIsVisaSectionOpen(!isVisaSectionOpen);
+  };
+
+  const toggleRightsSection = () => {
+    setIsRightsSectionOpen(!isRightsSectionOpen);
   };
 
   return (
@@ -125,6 +130,41 @@ function Home() {
         </div>
       )}
       
+      {/* Know Your Rights Section */}
+      <div
+        className="passport-section-header"
+        onClick={toggleRightsSection}
+        role="button"
+        tabIndex={0}
+        onKeyPress={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            toggleRightsSection();
+          }
+        }}
+      >
+        <h1>Know Your Rights! Click here!</h1>
+        <div className="expand-icon">
+          {isRightsSectionOpen ? <ChevronUp size={32} /> : <ChevronDown size={32} />}
+        </div>
+      </div>
+
+      {isRightsSectionOpen && (
+        <div className="visa-content">
+          <div className="card">
+            <div className="card-content">
+              <div className="main-text">
+                Ongoing ID-related laws, executive orders, and your rights at
+                the border — updated regularly.
+              </div>
+              <div className="card-arrow">↓</div>
+              <Link to="/know-your-rights" className="route-button">
+                View Know Your Rights
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="walkthrough-link">
         <p>
           📋{" "}

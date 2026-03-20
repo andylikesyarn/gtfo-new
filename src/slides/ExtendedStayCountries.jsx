@@ -24,10 +24,10 @@ const ExtendedStayCountries = () => {
 
   return (
     <div className="space-y-4">
-      <div className="bg-gradient-to-r from-blue-50 to-green-50 border-l-4 border-blue-500 p-4">
-        <h4 className="font-bold text-blue-900 mb-2">Extended Stay Options for U.S. Citizens</h4>
-        <p className="text-blue-800 text-sm">
-          These countries offer visa-free stays of 6 months or longer for U.S. passport holders. 
+      <div className="bg-gray-50 border-l-4 border-gray-400 p-4">
+        <h4 className="font-bold text-gray-800 mb-2">Extended Stay Options for U.S. Citizens</h4>
+        <p className="text-gray-700 text-sm">
+          These countries offer visa-free stays of 6 months or longer for U.S. passport holders.
           This makes them excellent options for extended stays or potential relocation planning.
         </p>
       </div>
@@ -35,11 +35,11 @@ const ExtendedStayCountries = () => {
       <div className="bg-white border border-gray-200 rounded-lg p-3 overflow-x-auto">
         <table className="w-full text-xs border-collapse">
           <thead>
-            <tr className="bg-gradient-to-r from-blue-600 to-purple-600 text-blue-900">
-              <th className="border border-gray-400 p-2 text-left font-bold bg-blue-200">Country/Region</th>
-              <th className="border border-gray-400 p-2 text-left font-bold bg-blue-200">Requirement</th>
-              <th className="border border-gray-400 p-2 text-left font-bold bg-blue-200">Max Stay</th>
-              <th className="border border-gray-400 p-2 text-left font-bold bg-blue-200">Important Notes</th>
+            <tr>
+              <th className="border border-gray-300 p-2 text-left font-bold bg-gray-100">Country/Region</th>
+              <th className="border border-gray-300 p-2 text-left font-bold bg-gray-100">Requirement</th>
+              <th className="border border-gray-300 p-2 text-left font-bold bg-gray-100">Max Stay</th>
+              <th className="border border-gray-300 p-2 text-left font-bold bg-gray-100">Important Notes</th>
             </tr>
           </thead>
           <tbody>
@@ -48,16 +48,10 @@ const ExtendedStayCountries = () => {
                 <td className="border border-gray-300 p-2 font-semibold text-gray-900">
                   {country.country}
                 </td>
-                <td className="border border-gray-300 p-2">
-                  <span className={`inline-block px-2 py-1 rounded text-xs font-medium ${
-                    country.requirement === 'Visa not required' 
-                      ? 'bg-green-100 text-green-800' 
-                      : 'bg-yellow-100 text-yellow-800'
-                  }`}>
-                    {country.requirement}
-                  </span>
+                <td className="border border-gray-300 p-2 text-gray-700">
+                  {country.requirement}
                 </td>
-                <td className="border border-gray-300 p-2 font-bold text-blue-700">
+                <td className="border border-gray-300 p-2 font-bold text-gray-800">
                   {country.stay}
                 </td>
                 <td className="border border-gray-300 p-2 text-gray-700">
@@ -70,32 +64,32 @@ const ExtendedStayCountries = () => {
       </div>
 
       <div className="grid grid-cols-3 gap-3 text-xs">
-        <div className="bg-blue-50 border border-blue-200 p-3 rounded">
-          <div className="font-bold text-blue-900 mb-1">🌟 Unlimited/1 Year</div>
-          <p className="text-blue-800">Marshall Islands, Micronesia, Albania, Georgia, Palau</p>
+        <div className="bg-gray-50 border border-gray-200 p-3 rounded">
+          <div className="font-bold text-gray-800 mb-1">Unlimited / 1 Year</div>
+          <p className="text-gray-700">Marshall Islands, Micronesia, Albania, Georgia, Palau</p>
         </div>
-        <div className="bg-green-50 border border-green-200 p-3 rounded">
-          <div className="font-bold text-green-900 mb-1">✓ 6-8 Months</div>
-          <p className="text-green-800">Bahamas, Antigua, Barbados, Dominica, Jamaica, UK</p>
+        <div className="bg-gray-50 border border-gray-200 p-3 rounded">
+          <div className="font-bold text-gray-800 mb-1">6–8 Months</div>
+          <p className="text-gray-700">Bahamas, Antigua, Barbados, Dominica, Jamaica, UK</p>
         </div>
-        <div className="bg-purple-50 border border-purple-200 p-3 rounded">
-          <div className="font-bold text-purple-900 mb-1">📋 Special Agreements</div>
-          <p className="text-purple-800">CA-4 area, Compact of Free Association, Schengen + bilateral</p>
+        <div className="bg-gray-50 border border-gray-200 p-3 rounded">
+          <div className="font-bold text-gray-800 mb-1">Special Agreements</div>
+          <p className="text-gray-700">CA-4 area, Compact of Free Association, Schengen + bilateral</p>
         </div>
       </div>
 
-      <div className="bg-yellow-50 border-l-4 border-yellow-500 p-3">
-        <p className="text-xs text-yellow-900">
-          <strong>⚠️ Important:</strong> Visa-free entry does NOT grant work authorization. 
+      <div className="bg-gray-50 border-l-4 border-gray-400 p-3">
+        <p className="text-xs text-gray-800">
+          <strong>Important:</strong> Visa-free entry does NOT grant work authorization.
           For employment, you'll need a separate work visa/permit in these countries.
         </p>
       </div>
 
       <div className="bg-gray-50 border border-gray-200 p-3 rounded text-center">
         <p className="text-xs text-gray-700">
-          📄 Verify entry requirements for any country:{" "}
+          Verify entry requirements for any country:{" "}
           <a href="https://travel.state.gov/content/travel/en/international-travel.html" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-medium">
-            U.S. State Department — International Travel ↗
+            U.S. State Department — International Travel
           </a>
         </p>
       </div>

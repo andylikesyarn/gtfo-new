@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Workshops from "./pages/Workshops";
 import GenderMarker from "./pages/GenderMarker";
 import Visa from "./pages/Visa";
+import KnowYourRights from "./pages/KnowYourRights";
 import gftoImage from "./assets/GTFO!.png";
 import "./App.css";
 
@@ -104,6 +105,13 @@ function App() {
                 Visa
               </Link>
               <Link
+                to="/know-your-rights"
+                className="nav-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Know Your Rights
+              </Link>
+              <Link
                 to="/workshops"
                 className="nav-link"
                 onClick={() => setIsMenuOpen(false)}
@@ -154,6 +162,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/gender-marker" element={<GenderMarker />} />
             <Route path="/visa" element={<Visa />} />
+            <Route path="/know-your-rights" element={<KnowYourRights />} />
           </Routes>
         </main>
 
