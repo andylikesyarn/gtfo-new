@@ -22,9 +22,8 @@ function About() {
               <img></img>
               Andy is currently a Founder-in-Residence in the{" "}
               <a href="https://bubble.io/immerse">Bubble Immerse program</a>,
-              and built this site for GTFO workshops hosted in conjunction with{" "}
-              <a href="https://themultiverse.school/">the Multiverse School.</a>{" "}
-              You can find him on{" "}
+              and built this site for GTFO passport and travel workshops. You
+              can find him on{" "}
               <a href="https://www.instagram.com/andysforest/">Instagram</a> or{" "}
               <a href="https://www.linkedin.com/in/andyforest/">LinkedIn</a>.
             </p>
@@ -40,9 +39,17 @@ function About() {
                 </strong>
                 <br></br>
                 <br></br>
-                If you find any errors on this site, message Andy on Insta or LinkedIn!
-                Thanks for reading this, and I hope you're able to get to where
-                you want to go.
+                If you find any errors on this site, message Andy on Insta or
+                LinkedIn! Thanks for reading this, and I hope you're able to get
+                to where you want to go.
+              </p>
+              <p>
+                <strong>Important notice:</strong> Any events or workshops using
+                the GTFO name hosted by the Multiverse School as of April 2026
+                are not affiliated with GTFO or QT Support Services in any way,
+                and we are not able to offer clarification or support regarding
+                information shared in these workshops. Please reach out to Andy
+                directly if you have questions about official GTFO events.
               </p>
             </div>
           </div>

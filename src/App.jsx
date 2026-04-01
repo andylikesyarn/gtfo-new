@@ -11,6 +11,9 @@ import Workshops from "./pages/Workshops";
 import GenderMarker from "./pages/GenderMarker";
 import Visa from "./pages/Visa";
 import KnowYourRights from "./pages/KnowYourRights";
+import IceAirportMap from "./pages/IceAirportMap";
+import Account from "./pages/Account";
+import Resources from "./pages/Resources";
 import gftoImage from "./assets/GTFO!.png";
 import "./App.css";
 
@@ -104,19 +107,43 @@ function App() {
               >
                 Visa
               </Link>
-              <Link
-                to="/know-your-rights"
-                className="nav-link"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Know Your Rights
-              </Link>
+              <div className="dropdown">
+                <span className="dropdown-trigger">
+                  Know Your Rights
+                  <span className="dropdown-arrow">▼</span>
+                </span>
+                <div className="dropdown-content">
+                  <div className="dropdown-section">
+                    <Link
+                      to="/know-your-rights"
+                      className="dropdown-link"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Know Your Rights
+                    </Link>
+                    <Link
+                      to="/ice-airport-map"
+                      className="dropdown-link"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      ICE Deployment Airport Map
+                    </Link>
+                  </div>
+                </div>
+              </div>
               <Link
                 to="/workshops"
                 className="nav-link"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Workshops
+              </Link>
+              <Link
+                to="/resources"
+                className="nav-link"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Resources
               </Link>
               <Link
                 to="/about"
@@ -163,6 +190,9 @@ function App() {
             <Route path="/gender-marker" element={<GenderMarker />} />
             <Route path="/visa" element={<Visa />} />
             <Route path="/know-your-rights" element={<KnowYourRights />} />
+            <Route path="/ice-airport-map" element={<IceAirportMap />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/resources" element={<Resources />} />
           </Routes>
         </main>
 
